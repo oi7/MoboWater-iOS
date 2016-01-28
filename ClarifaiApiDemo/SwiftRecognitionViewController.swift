@@ -49,6 +49,7 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             // The user picked an image. Send it Clarifai for recognition.
             imageView.image = image
+            backgoundImageView.hidden = true
             textView.text = "Recognizing..."
 //            button.enabled = false
             recognizeImage(image)
