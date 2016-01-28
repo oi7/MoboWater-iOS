@@ -16,20 +16,28 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
     static let conceptName: String? = nil
     static let conceptNamespace = "default"
 
+    @IBOutlet weak var backgoundImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var button: UIButton!
-
+//    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var libraryButton: UIButton!
     private lazy var client : ClarifaiClient =
         ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
-
-    @IBAction func buttonPressed(sender: UIButton) {
-        // Show a UIImagePickerController to let the user pick an image from their library.
+    
+    @IBAction func openCamera(sender: UIButton) {
+        let picker = UIImagePickerController()
+        picker.sourceType = .Camera
+        picker.allowsEditing = false
+        picker.delegate = self
+        self.presentViewController(picker, animated: true, completion: nil)
+    }
+    @IBAction func openLibrary(sender: UIButton) {
         let picker = UIImagePickerController()
         picker.sourceType = .PhotoLibrary
         picker.allowsEditing = false
         picker.delegate = self
-        presentViewController(picker, animated: true, completion: nil)
+        self.presentViewController(picker, animated: true, completion: nil)
     }
 
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
@@ -42,7 +50,7 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
             // The user picked an image. Send it Clarifai for recognition.
             imageView.image = image
             textView.text = "Recognizing..."
-            button.enabled = false
+//            button.enabled = false
             recognizeImage(image)
         }
     }
@@ -69,7 +77,7 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
                 } else {
                     self.textView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
                 }
-                self.button.enabled = true
+//                self.button.enabled = true
             }
         } else {
             // Custom Training: Send the JPEG to Clarifai for prediction against a custom model.
@@ -81,7 +89,7 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
                 } else {
                     self.textView.text = "Prediction score for \(SwiftRecognitionViewController.conceptName!):\n\(results![0].score)"
                 }
-                self.button.enabled = true
+//                self.button.enabled = true
             }
         }
     }
