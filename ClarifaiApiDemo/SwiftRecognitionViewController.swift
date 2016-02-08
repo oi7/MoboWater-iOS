@@ -19,9 +19,11 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
     @IBOutlet weak var backgoundImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var qualityTextView: UITextView!
 //    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var libraryButton: UIButton!
+    
     private lazy var client : ClarifaiClient =
         ClarifaiClient(appID: clarifaiClientID, appSecret: clarifaiClientSecret)
     
@@ -32,6 +34,31 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
         picker.delegate = self
         self.presentViewController(picker, animated: true, completion: nil)
     }
+    
+    @IBAction func shareButton(sender: UIButton) {
+        let image = generateImage()
+        
+        let activity = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        
+        activity.completionWithItemsHandler = { (activityType: String?, completed: Bool, returnedItems: [AnyObject]?, activityError: NSError?) -> Void in
+            if completed {
+                activity.dismissViewControllerAnimated(true, completion: nil)
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
+        presentViewController(activity, animated: true, completion: nil)
+    }
+    
+    func generateImage() -> UIImage {
+        
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+
     @IBAction func openLibrary(sender: UIButton) {
         let picker = UIImagePickerController()
         picker.sourceType = .PhotoLibrary
@@ -77,6 +104,9 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
                     self.textView.text = "Sorry, there was an error recognizing your image."
                 } else {
                     self.textView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
+                    let a:Double = drand48()
+                    let b:String = String(format:"%f", a)
+                    self.qualityTextView.text = "Quality:\n" + b
                 }
 //                self.button.enabled = true
             }
@@ -93,5 +123,9 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
 //                self.button.enabled = true
             }
         }
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }
