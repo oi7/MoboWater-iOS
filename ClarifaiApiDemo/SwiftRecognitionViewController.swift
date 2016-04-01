@@ -16,11 +16,11 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
     static let conceptName: String? = nil
     static let conceptNamespace = "default"
 
-    @IBOutlet weak var backgoundImageView: UIImageView!
+//    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var tagTextView: UITextView!
     @IBOutlet weak var qualityTextView: UITextView!
-//    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var libraryButton: UIButton!
     
@@ -76,8 +76,8 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             // The user picked an image. Send it Clarifai for recognition.
             imageView.image = image
-            backgoundImageView.hidden = true
-            textView.text = "Recognizing..."
+//            backgroundImageView.hidden = true
+            tagTextView.text = "Recognizing..."
 //            button.enabled = false
             recognizeImage(image)
         }
@@ -101,9 +101,9 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
                 (results: [ClarifaiResult]?, error: NSError?) in
                 if error != nil {
                     print("Error: \(error)\n")
-                    self.textView.text = "Sorry, there was an error recognizing your image."
+                    self.tagTextView.text = "Sorry, there was an error recognizing your image."
                 } else {
-                    self.textView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
+                    self.tagTextView.text = "Tags:\n" + results![0].tags.joinWithSeparator(", ")
                     let a:Double = drand48()
                     let b:String = String(format:"%f", a)
                     self.qualityTextView.text = "Quality:\n" + b
@@ -116,9 +116,9 @@ class SwiftRecognitionViewController : UIViewController, UIImagePickerController
                 (results: [ClarifaiPredictionResult]?, error: NSError?) in
                 if error != nil {
                     print("Error: \(error)\n")
-                    self.textView.text = "Sorry, there was an error running prediction on your image."
+                    self.tagTextView.text = "Sorry, there was an error running prediction on your image."
                 } else {
-                    self.textView.text = "Prediction score for \(SwiftRecognitionViewController.conceptName!):\n\(results![0].score)"
+                    self.tagTextView.text = "Prediction score for \(SwiftRecognitionViewController.conceptName!):\n\(results![0].score)"
                 }
 //                self.button.enabled = true
             }
