@@ -3,7 +3,7 @@
 //  ClarifaiApiDemo
 //
 
-import Foundation
+import Foundation;
 
 
 // IMPORTANT NOTE: you should replace the clarifaiClientID and clarifaiClientSecret values below

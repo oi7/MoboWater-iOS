@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "408D39541BACA1FA00C5608B"
-               BuildableName = "ClarifaiApiDemo.app"
-               BlueprintName = "ClarifaiApiDemo"
-               ReferencedContainer = "container:ClarifaiApiDemo.xcodeproj">
+               BuildableName = "MoboWater.app"
+               BlueprintName = "MoboWater"
+               ReferencedContainer = "container:MoboWater.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "408D396D1BACA1FA00C5608B"
-               BuildableName = "ClarifaiApiDemoTests.xctest"
-               BlueprintName = "ClarifaiApiDemoTests"
-               ReferencedContainer = "container:ClarifaiApiDemo.xcodeproj">
+               BuildableName = "MoboWater.xctest"
+               BlueprintName = "MoboWaterTests"
+               ReferencedContainer = "container:MoboWater.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "408D39541BACA1FA00C5608B"
-            BuildableName = "ClarifaiApiDemo.app"
-            BlueprintName = "ClarifaiApiDemo"
-            ReferencedContainer = "container:ClarifaiApiDemo.xcodeproj">
+            BuildableName = "MoboWater.app"
+            BlueprintName = "MoboWater"
+            ReferencedContainer = "container:MoboWater.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "408D39541BACA1FA00C5608B"
-            BuildableName = "ClarifaiApiDemo.app"
-            BlueprintName = "ClarifaiApiDemo"
-            ReferencedContainer = "container:ClarifaiApiDemo.xcodeproj">
+            BuildableName = "MoboWater.app"
+            BlueprintName = "MoboWater"
+            ReferencedContainer = "container:MoboWater.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "408D39541BACA1FA00C5608B"
-            BuildableName = "ClarifaiApiDemo.app"
-            BlueprintName = "ClarifaiApiDemo"
-            ReferencedContainer = "container:ClarifaiApiDemo.xcodeproj">
+            BuildableName = "MoboWater.app"
+            BlueprintName = "MoboWater"
+            ReferencedContainer = "container:MoboWater.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -4,7 +4,7 @@
 //
 
 #import "RecognitionViewController.h"
-#import "ClarifaiApiDemo-Swift.h"
+#import "MoboWater-Swift.h"
 #import "ClarifaiClient.h"
 
 

@@ -40,7 +40,7 @@
 		407195201BADD02B0076B650 /* RecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognitionViewController.m; sourceTree = "<group>"; };
 		4088A4361BAEF1B400B1C682 /* ClarifaiApiDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClarifaiApiDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		4088A4371BAEF1B500B1C682 /* SwiftRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRecognitionViewController.swift; sourceTree = "<group>"; };
-		408D39551BACA1FA00C5608B /* ClarifaiApiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClarifaiApiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		408D39551BACA1FA00C5608B /* MoboWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoboWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408D39591BACA1FA00C5608B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408D395A1BACA1FA00C5608B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		408D395C1BACA1FA00C5608B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		408D39631BACA1FA00C5608B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		408D39651BACA1FA00C5608B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		408D39681BACA1FA00C5608B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		408D396E1BACA1FA00C5608B /* ClarifaiApiDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClarifaiApiDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408D396E1BACA1FA00C5608B /* MoboWater.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoboWater.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408D39731BACA1FA00C5608B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408D39741BACA1FA00C5608B /* ClarifaiApiDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClarifaiApiDemoTests.m; sourceTree = "<group>"; };
 		D3908FCAEDB4ED9DE2B4BCF4 /* libPods-ClarifaiApiDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClarifaiApiDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,8 +87,8 @@
 		408D39561BACA1FA00C5608B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				408D39551BACA1FA00C5608B /* ClarifaiApiDemo.app */,
-				408D396E1BACA1FA00C5608B /* ClarifaiApiDemoTests.xctest */,
+				408D39551BACA1FA00C5608B /* MoboWater.app */,
+				408D396E1BACA1FA00C5608B /* MoboWater.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		408D39541BACA1FA00C5608B /* ClarifaiApiDemo */ = {
+		408D39541BACA1FA00C5608B /* MoboWater */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 408D39781BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "ClarifaiApiDemo" */;
+			buildConfigurationList = 408D39781BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "MoboWater" */;
 			buildPhases = (
 				6B0F309093B45DA44CC62E2B /* Check Pods Manifest.lock */,
 				408D39511BACA1FA00C5608B /* Sources */,
@@ -174,14 +174,14 @@
 			);
 			dependencies = (
 			);
-			name = ClarifaiApiDemo;
+			name = MoboWater;
 			productName = ClarifaiApiDemo;
-			productReference = 408D39551BACA1FA00C5608B /* ClarifaiApiDemo.app */;
+			productReference = 408D39551BACA1FA00C5608B /* MoboWater.app */;
 			productType = "com.apple.product-type.application";
 		};
-		408D396D1BACA1FA00C5608B /* ClarifaiApiDemoTests */ = {
+		408D396D1BACA1FA00C5608B /* MoboWaterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 408D397B1BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "ClarifaiApiDemoTests" */;
+			buildConfigurationList = 408D397B1BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "MoboWaterTests" */;
 			buildPhases = (
 				408D396A1BACA1FA00C5608B /* Sources */,
 				408D396B1BACA1FA00C5608B /* Frameworks */,
@@ -192,9 +192,9 @@
 			dependencies = (
 				408D39701BACA1FA00C5608B /* PBXTargetDependency */,
 			);
-			name = ClarifaiApiDemoTests;
+			name = MoboWaterTests;
 			productName = ClarifaiApiDemoTests;
-			productReference = 408D396E1BACA1FA00C5608B /* ClarifaiApiDemoTests.xctest */;
+			productReference = 408D396E1BACA1FA00C5608B /* MoboWater.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 				TargetAttributes = {
 					408D39541BACA1FA00C5608B = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = JGKS72ETPX;
+						DevelopmentTeam = B2JHQ8NB9B;
 					};
 					408D396D1BACA1FA00C5608B = {
 						CreatedOnToolsVersion = 6.4;
@@ -218,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 408D39501BACA1FA00C5608B /* Build configuration list for PBXProject "ClarifaiApiDemo" */;
+			buildConfigurationList = 408D39501BACA1FA00C5608B /* Build configuration list for PBXProject "MoboWater" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,8 +231,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				408D39541BACA1FA00C5608B /* ClarifaiApiDemo */,
-				408D396D1BACA1FA00C5608B /* ClarifaiApiDemoTests */,
+				408D39541BACA1FA00C5608B /* MoboWater */,
+				408D396D1BACA1FA00C5608B /* MoboWaterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -332,7 +332,7 @@
 /* Begin PBXTargetDependency section */
 		408D39701BACA1FA00C5608B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 408D39541BACA1FA00C5608B /* ClarifaiApiDemo */;
+			target = 408D39541BACA1FA00C5608B /* MoboWater */;
 			targetProxy = 408D396F1BACA1FA00C5608B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,6 +397,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = MoboWater;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -433,6 +434,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MoboWater;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -449,8 +451,8 @@
 				INFOPLIST_FILE = ClarifaiApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clarifai.WaterNY;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.MoboWater;
+				PRODUCT_NAME = MoboWater;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ClarifaiApiDemo/ClarifaiApiDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -469,8 +471,8 @@
 				INFOPLIST_FILE = ClarifaiApiDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.clarifai.WaterNY;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oi7.MoboWater;
+				PRODUCT_NAME = MoboWater;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ClarifaiApiDemo/ClarifaiApiDemo-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,9 +490,9 @@
 				);
 				INFOPLIST_FILE = ClarifaiApiDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.clarifai.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClarifaiApiDemo.app/ClarifaiApiDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oi7.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MoboWater;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoboWater.app/MoboWater";
 			};
 			name = Debug;
 		};
@@ -501,16 +503,16 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ClarifaiApiDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.clarifai.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClarifaiApiDemo.app/ClarifaiApiDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oi7.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MoboWater;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoboWater.app/MoboWater";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		408D39501BACA1FA00C5608B /* Build configuration list for PBXProject "ClarifaiApiDemo" */ = {
+		408D39501BACA1FA00C5608B /* Build configuration list for PBXProject "MoboWater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				408D39761BACA1FA00C5608B /* Debug */,
@@ -519,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		408D39781BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "ClarifaiApiDemo" */ = {
+		408D39781BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "MoboWater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				408D39791BACA1FA00C5608B /* Debug */,
@@ -528,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		408D397B1BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "ClarifaiApiDemoTests" */ = {
+		408D397B1BACA1FA00C5608B /* Build configuration list for PBXNativeTarget "MoboWaterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				408D397C1BACA1FA00C5608B /* Debug */,

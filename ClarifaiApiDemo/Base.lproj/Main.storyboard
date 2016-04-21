@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -16,17 +16,17 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MoboWater" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-WP-yg5">
-                                <rect key="frame" x="248" y="483" width="270.5" height="57.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MoboWater" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-WP-yg5">
+                                <rect key="frame" x="51" y="304" width="270.5" height="57.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIT Media Lab, Civic Media Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nK-1v-Gmc">
-                                <rect key="frame" x="253" y="551" width="262" height="20.5"/>
+                                <rect key="frame" x="56" y="372" width="262" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ndq-yg-GgT"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 </variation>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-07-eJf">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="768"/>
+                                <rect key="frame" x="-4" y="0.0" width="383" height="383"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wTd-07-eJf" secondAttribute="height" multiplier="1:1" id="Wvw-eU-JUW">
                                         <variation key="widthClass=compact" constant="3"/>
@@ -50,8 +50,8 @@
                                     <rect key="frame" x="-4" y="0.0" width="383" height="380"/>
                                 </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7P2-fU-VA6" userLabel="tagTextView">
-                                <rect key="frame" x="20" y="795" width="728" height="52"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7P2-fU-VA6" userLabel="tagTextView">
+                                <rect key="frame" x="16" y="795" width="343" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="4nm-zL-E5I"/>
@@ -75,8 +75,8 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP1-PD-iXF">
-                                <rect key="frame" x="68" y="944" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UP1-PD-iXF">
+                                <rect key="frame" x="64" y="892" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="RZo-6r-ohc"/>
                                     <constraint firstAttribute="height" constant="50" id="XPS-aE-ijs"/>
@@ -98,8 +98,8 @@
                                     <action selector="openCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EOG-JK-NV3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjK-u8-UGm">
-                                <rect key="frame" x="650" y="944" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjK-u8-UGm">
+                                <rect key="frame" x="261" y="892" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IvR-pa-09C"/>
                                     <constraint firstAttribute="width" constant="50" id="TPg-Lf-rIM"/>
@@ -115,8 +115,8 @@
                                     <action selector="openLibrary:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vrI-pr-PkX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNh-Pf-hOn" userLabel="Share Button">
-                                <rect key="frame" x="358" y="944" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNh-Pf-hOn" userLabel="Share Button">
+                                <rect key="frame" x="358" y="892" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="UXJ-bU-n7L"/>
                                     <constraint firstAttribute="width" constant="50" id="fhc-Jc-rFp"/>
@@ -138,7 +138,7 @@
                                     <action selector="shareButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vpP-ng-opA"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-j3-s5H" userLabel="qualityTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-j3-s5H" userLabel="qualityTextView">
                                 <rect key="frame" x="20" y="865" width="728" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -272,6 +272,11 @@
                                 <exclude reference="OOU-d7-xjL"/>
                                 <exclude reference="THu-KL-IFe"/>
                                 <exclude reference="ijg-hb-MwF"/>
+                                <exclude reference="6uH-6d-7d0"/>
+                                <exclude reference="DLJ-9G-LZB"/>
+                                <exclude reference="HDC-N8-wF8"/>
+                                <exclude reference="Isk-nb-a16"/>
+                                <exclude reference="omm-kr-pTh"/>
                                 <exclude reference="I4e-t5-jjr"/>
                                 <exclude reference="K8n-vz-cG1"/>
                                 <exclude reference="NNQ-Mg-hQS"/>
@@ -281,11 +286,6 @@
                                 <exclude reference="lBY-Tk-lOT"/>
                                 <exclude reference="oya-PL-Fq9"/>
                                 <exclude reference="tQF-Mc-nUG"/>
-                                <exclude reference="6uH-6d-7d0"/>
-                                <exclude reference="DLJ-9G-LZB"/>
-                                <exclude reference="HDC-N8-wF8"/>
-                                <exclude reference="Isk-nb-a16"/>
-                                <exclude reference="omm-kr-pTh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -314,12 +314,12 @@
                                 <include reference="THu-KL-IFe"/>
                                 <exclude reference="ijg-hb-MwF"/>
                                 <exclude reference="z6z-hZ-VRR"/>
+                                <include reference="DLJ-9G-LZB"/>
                                 <exclude reference="AY9-GA-BII"/>
                                 <include reference="K8n-vz-cG1"/>
                                 <include reference="NNQ-Mg-hQS"/>
                                 <include reference="VcC-AV-rPD"/>
                                 <include reference="gA0-hx-WGy"/>
-                                <include reference="DLJ-9G-LZB"/>
                             </mask>
                         </variation>
                     </view>
