@@ -76,8 +76,8 @@
 		408D394C1BACA1FA00C5608B = {
 			isa = PBXGroup;
 			children = (
-				408D39571BACA1FA00C5608B /* ClarifaiApiDemo */,
-				408D39711BACA1FA00C5608B /* ClarifaiApiDemoTests */,
+				408D39571BACA1FA00C5608B /* MoboWater */,
+				408D39711BACA1FA00C5608B /* MoboWaterTests */,
 				408D39561BACA1FA00C5608B /* Products */,
 				70057D02BE2C147CA2058B7D /* Pods */,
 				B3D5CE5DCC12FDEE33B911C2 /* Frameworks */,
@@ -93,7 +93,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		408D39571BACA1FA00C5608B /* ClarifaiApiDemo */ = {
+		408D39571BACA1FA00C5608B /* MoboWater */ = {
 			isa = PBXGroup;
 			children = (
 				408D395C1BACA1FA00C5608B /* AppDelegate.h */,
@@ -110,7 +110,7 @@
 				408D39671BACA1FA00C5608B /* LaunchScreen.xib */,
 				408D39581BACA1FA00C5608B /* Supporting Files */,
 			);
-			path = ClarifaiApiDemo;
+			path = MoboWater;
 			sourceTree = "<group>";
 		};
 		408D39581BACA1FA00C5608B /* Supporting Files */ = {
@@ -122,13 +122,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		408D39711BACA1FA00C5608B /* ClarifaiApiDemoTests */ = {
+		408D39711BACA1FA00C5608B /* MoboWaterTests */ = {
 			isa = PBXGroup;
 			children = (
 				408D39741BACA1FA00C5608B /* ClarifaiApiDemoTests.m */,
 				408D39721BACA1FA00C5608B /* Supporting Files */,
 			);
-			path = ClarifaiApiDemoTests;
+			path = MoboWaterTests;
 			sourceTree = "<group>";
 		};
 		408D39721BACA1FA00C5608B /* Supporting Files */ = {
